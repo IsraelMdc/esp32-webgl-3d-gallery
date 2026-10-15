@@ -1,0 +1,13 @@
+# PlatformIO & Build Artifacts
+.pio/
+.vscode/
+
+# Sensível (Credenciais Wi-Fi do ESP32)
+firmware_esp32/src/config.h
+
+# Arquivos temporários e de log
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+

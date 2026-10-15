@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Detalhes da Obra · Galeria Virtual 3D ✨</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body class="pagina-historia">
+  <main class="historia-container">
+    <!-- Navegação Superior -->
+    <nav class="historia-nav-topo">
+      <a href="index.html" class="btn-voltar">
+        <span>←</span>
+        <span>Voltar à galeria 3D</span>
+      </a>
+      <button id="btn-som" class="btn-icone" title="Ligar/Desligar Música" aria-label="Som">🔊</button>
+    </nav>
+
+    <!-- Card Principal da Memória -->
+    <article class="historia-card">
+      <div class="historia-moldura-foto">
+        <img id="historia-foto" class="historia-foto" src="" alt="Foto da obra" />
+      </div>
+
+      <div class="historia-conteudo">
+        <div id="historia-tag" class="historia-tag">OBRA #1</div>
+        <h1 id="historia-titulo" class="historia-titulo">Título da Obra</h1>
+        <div id="historia-data" class="historia-data">📅 Galeria Principal</div>
+        <p id="historia-texto" class="historia-texto">Descrição técnica e conceitual...</p>
+      </div>
+    </article>
+
+    <!-- Navegação Anterior / Próxima -->
+    <footer class="historia-botoes-nav">
+      <a id="btn-anterior" class="btn-paginacao" href="#">← Obra Anterior</a>
+      <a id="btn-proxima" class="btn-paginacao" href="#">Próxima Obra →</a>
+    </footer>
+  </main>
+
+  <!-- Chuva de Partículas (Evento Físico ESP32) -->
+  <div id="chuva-container"></div>
+  <div id="alerta-surpresa">✨ Interação física detectada no microcontrolador ESP32!</div>
+
+  <script type="module" src="js/historia.js"></script>
+</body>
+</html>
+

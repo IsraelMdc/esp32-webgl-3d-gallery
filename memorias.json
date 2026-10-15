@@ -1,0 +1,76 @@
+{
+  "aniversario": "2024-01-01T00:00:00-03:00",
+  "nome_homenageada": "Visitante",
+  "musica": "",
+  "carta_secreta": {
+    "titulo": "Bem-vindo à Exposição Virtual 🏛️✨",
+    "subtitulo": "Sobre este Projeto de Computação Gráfica & IoT",
+    "texto": "Esta galeria virtual 3D foi concebida como uma demonstração técnica de alto desempenho para navegadores web e sistemas embarcados.\n\nTodo o ambiente gráfico que você está explorando (mármore polido, claraboia, candelabros, iluminação mista, pétalas de flores com materiais PBR e física de colisão) foi desenvolvido utilizando Three.js e WebGL nativo, projetado para rodar a 60 FPS estáveis mesmo em smartphones.\n\nAlém da renderização web, esta aplicação foi estruturada para ser servida diretamente da memória Flash de um microcontrolador ESP32 de US$ 4 com apenas 320 KB de RAM, utilizando particionamento LittleFS e compressão transparente Gzip.\n\nEspero que aprecie a visita e a arquitetura desenvolvida!",
+    "assinatura": "Israel Magalhães — Desenvolvedor de Software & IoT"
+  },
+  "memorias": [
+    {
+      "id": 1,
+      "foto": "fotos/01.jpg",
+      "titulo": "O Renascimento & Luzes Clássicas",
+      "data": "Galeria Principal — Estação I",
+      "texto": "Estudo de iluminação volumétrica e claro-escuro (*chiaroscuro*). A composição explora texturas aveludadas, reflexos metálicos de latão e dispersão suave de sombras sobre o mármore."
+    },
+    {
+      "id": 2,
+      "foto": "fotos/02.jpg",
+      "titulo": "Escultura Clássica em Mármore",
+      "data": "Galeria Principal — Estação II",
+      "texto": "Renderização de relevo com microtexturas PBR (*Roughness* e *Metalness*). O modelo digital busca capturar a translucidez e suavidade do mármore Carrara sob a luz zenital."
+    },
+    {
+      "id": 3,
+      "foto": "fotos/03.jpg",
+      "titulo": "Arquitetura Monumental de Museus",
+      "data": "Galeria Principal — Estação III",
+      "texto": "Perspectiva de grande angular com projeção geométrica simétrica. Demonstração do cálculo de FOV dinâmico adaptativo entre dispositivos desktop e mobile."
+    },
+    {
+      "id": 4,
+      "foto": "fotos/04.jpg",
+      "titulo": "Cromatismo & Abstração Moderna",
+      "data": "Galeria Principal — Estação IV",
+      "texto": "Harmonia entre a arquitetura neoclássica sóbria e o contraste vibrante de pigmentos. Amostragem em alta fidelidade com filtragem anisotrópica."
+    },
+    {
+      "id": 5,
+      "foto": "fotos/05.jpg",
+      "titulo": "Afrescos & Cúpulas Zenitais",
+      "data": "Galeria Principal — Estação V",
+      "texto": "Inspirado nas grandes rotundas e catedrais renascentistas europeias. O teto deste salão conta com um óculo astronômico alinhado à lua."
+    },
+    {
+      "id": 6,
+      "foto": "fotos/06.jpg",
+      "titulo": "Retratos Históricos & Expressão",
+      "data": "Galeria Principal — Estação VI",
+      "texto": "Captura de detalhes finos e gradação tonal. As molduras douradas dos quadros contam com aros trabalhados e reflexão ambiental calibrada."
+    },
+    {
+      "id": 7,
+      "foto": "fotos/07.jpg",
+      "titulo": "Natureza-Morta & Poética Floral",
+      "data": "Galeria Principal — Estação VII",
+      "texto": "Diálogo visual com o canteiro botânico central da galeria, composto por modelos 3D de rosas aveludadas, lírios e gérberas multicoloridas."
+    },
+    {
+      "id": 8,
+      "foto": "fotos/08.jpg",
+      "titulo": "Luz Através do Vitral",
+      "data": "Galeria Principal — Estação VIII",
+      "texto": "Interação de luzes pontuais coloridas com materiais dielétricos. Cada vela acesa nos candelabros atua como emissor dinâmico de fótons quentes."
+    },
+    {
+      "id": 9,
+      "foto": "fotos/09.jpg",
+      "titulo": "A Estética Eterna do Mármore",
+      "data": "Galeria Principal — Estação IX",
+      "texto": "Fechamento da ala circular com a representação da solidez arquitetural. A rotunda circular de 7.5 metros convida à contemplação e imersão 360°."
+    }
+  ]
+}
