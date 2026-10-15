@@ -7,7 +7,7 @@
  * ============================================================
  */
 
-import * as THREE from "../vendor/three.module.min.js";
+import * as THREE from "three";
 import { criarLirioRealista, criarGerberaRealista, criarRosaRealista } from "./flores_realistas.js";
 
 // ------------------------------------------------------------

@@ -5,7 +5,7 @@
  * ============================================================
  */
 
-import * as THREE from "../vendor/three.module.min.js";
+import * as THREE from "three";
 import { inicializarAbertura } from "./abertura.js";
 import { construirGaleria } from "./galeria.js";
 import { ControladorGaleria } from "./controles.js";

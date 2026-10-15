@@ -4,7 +4,7 @@
  * ============================================================
  */
 
-import * as THREE from "../vendor/three.module.min.js";
+import * as THREE from "three";
 
 // Efeito sonoro procedural de estalo mecânico clássico (Web Audio API)
 function tocarSomCliqueInterruptor() {

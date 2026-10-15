@@ -238,14 +238,11 @@ export function inicializarAbertura(config, aoEntrarCallback) {
   }, 1000);
 
   function entrarNaGaleria() {
-    // Trava de segurança: impede entrada se a contagem não tiver zerado (a menos que seja preview)
-    if (!contagemZerada && !modoPreview) {
-      console.warn("Acesso bloqueado: o cronômetro ainda está em andamento.");
-      return;
-    }
-
     sessionStorage.setItem("gessy_entrou_sessao", "1");
-    if (modal) modal.classList.add("oculto");
+    if (modal) {
+      modal.classList.add("oculto");
+      modal.style.display = "none";
+    }
 
     // Inicia música ou caixinha procedural
     if (musicaAtiva) {
@@ -253,11 +250,6 @@ export function inicializarAbertura(config, aoEntrarCallback) {
         audioPlayer.play().catch(() => {
           iniciarCaixaDeMusica();
         });
-        setInterval(() => {
-          if (audioPlayer && !audioPlayer.paused) {
-            sessionStorage.setItem("gessy_musica_tempo", audioPlayer.currentTime);
-          }
-        }, 1000);
       } else {
         iniciarCaixaDeMusica();
       }
@@ -266,14 +258,9 @@ export function inicializarAbertura(config, aoEntrarCallback) {
     if (aoEntrarCallback) aoEntrarCallback();
   }
 
-  // Só pula direto para a galeria se já entrou NESTA sessão E se o cronômetro estiver zerado
-  if (jaEntrou && (contagemZerada || modoPreview)) {
+  if (jaEntrou) {
     entrarNaGaleria();
   } else if (btnEntrar) {
-    btnEntrar.addEventListener("click", () => {
-      if (contagemZerada || modoPreview) {
-        entrarNaGaleria();
-      }
-    });
+    btnEntrar.addEventListener("click", entrarNaGaleria);
   }
 }
