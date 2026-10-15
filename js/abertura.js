@@ -146,38 +146,6 @@ export function inicializarAbertura(config, aoEntrarCallback) {
     }
   });
 
-  let contagemZerada = false;
-
-  function atualizarContagem() {
-    const agora = new Date().getTime();
-    const diferenca = dataAlvo - agora;
-
-    if (diferenca <= 0 || modoPreview) {
-      contagemZerada = true;
-      if (gridContagem) gridContagem.style.display = "none";
-      if (titulo) titulo.textContent = `Feliz Aniversário, ${config.nome_homenageada || "Gessy"}! 🎂`;
-      if (sub) sub.textContent = "Preparei esta galeria 3D especial com as nossas melhores memórias. Toque abaixo para passear pelo nosso salão.";
-      
-      if (btnEntrar) {
-        btnEntrar.style.display = "inline-flex";
-        if (floresProntas) {
-          btnEntrar.disabled = false;
-          btnEntrar.innerHTML = `
-            <span class="btn-icone-galeria">🖼</span>
-            <span class="btn-texto-galeria">Descobrir nossa galeria</span>
-            <span class="btn-seta-galeria">→</span>
-          `;
-          btnEntrar.style.cursor = "pointer";
-        } else {
-          btnEntrar.disabled = true;
-          btnEntrar.innerHTML = `
-            <span class="btn-icone-galeria">🌸</span>
-            <span class="btn-texto-galeria">Cultivando o jardim...</span>
-          `;
-          btnEntrar.style.cursor = "wait";
-        }
-      }
-      return true;
   let contagemZerada = true; // No showcase profissional a galeria fica sempre desbloqueada para visitação
 
   function atualizarContagem() {
